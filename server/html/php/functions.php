@@ -80,7 +80,7 @@
 	    . "	FROM Incidencia "
 	    . " WHERE Revisado = FALSE"
 	    . " AND Solucionado = FALSE"
-	    . "	ORDER BY Fecha ASC;";
+	    . "	ORDER BY Fecha DESC;";
 
 		$result = mysqli_query($link, $query);
 		while ($row = mysqli_fetch_array($result)){
@@ -115,7 +115,7 @@
 	    . "	FROM Incidencia "
 	    . " WHERE Solucionado = FALSE"
 	    . " AND Revisado = TRUE"
-	    . "	ORDER BY Fecha ASC;";
+	    . "	ORDER BY Fecha DESC;";
 
 		$result = mysqli_query($link, $query);
 		while ($row = mysqli_fetch_array($result)){
