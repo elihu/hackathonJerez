@@ -42,8 +42,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="incidencias.html">Incidencias</a></li>
-            <li><a href="fotos.html">Fotos</a></li>
+            <li class="active"><a href="incidenciasSinValidar.html">Incidencias sin validar</a></li>
+            <li><a href="incidenciasSinSolucionar.html">Incidencias sin solucionar</a></li>
+            <li><a href="fotos.html">Moderar fotos</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -52,12 +53,54 @@
     <div class="container">
 
       <div class="template">
-        <h1>Tabla de incidencias</h1>
-        <p class="lead">Aqui van a estar todas las incidencias sin validar.</p>
+        <h1>Incidencias sin validar</h1>
+
       </div>
 
+      <div class="bs-example" data-example-id="panel-without-body-with-table">
+          <div class="panel panel-default">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Nombre</th>
+                  <th>Descripción</th>
+                  <th>Validar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>
+                    <button class="btn btn-success" type="button">Aceptar</button>
+                    <button class="btn btn-danger" type="button">Denegar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>
+                    <button class="btn btn-success" type="button">Aceptar</button>
+                    <button class="btn btn-danger" type="button">Denegar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>
+                    <button class="btn btn-success" type="button">Aceptar</button>
+                    <button class="btn btn-danger" type="button">Denegar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
     </div><!-- /.container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
