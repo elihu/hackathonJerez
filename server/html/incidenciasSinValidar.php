@@ -76,14 +76,14 @@
 
                 <?php
                   include 'php/functions.php';
-		  $validar = $_GET['validar'];
-		  if($validar!=0){
-			validarIncidencia($validar);
-		  }
-		  $denegar = $_GET['denegar'];
-		  if($denegar!=0){
-			denegarIncidencia($denegar);
-		  }
+					  $validar = $_GET['validar'];
+					  if($validar!=0){
+						validarIncidencia($validar);
+					  }
+					  $denegar = $_GET['denegar'];
+					  if($denegar>0){
+						denegarIncidencia($denegar);
+					  }
                   listaIncidenciasNoValidadas();
 
                 ?>

@@ -75,10 +75,10 @@
               <tbody>
                 <?php
                   include 'php/functions.php';
-		  $validar = $_GET['validar'];
-		  if($validar!=0){
-			validarSolucion($validar);
-		  }
+						  $validar = $_GET['validar'];
+						  if($validar!=0){
+							validarSolucion($validar);
+						  }
                   listaIncidenciasNoSolucionadas();
 
                 ?>

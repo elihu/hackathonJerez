@@ -61,7 +61,8 @@
 		$link = connect();
 		$query = "SELECT Titulo, Descripcion, Imagen"
 	    . "	FROM Incidencia "
-	    . "	WHERE IdSendero = ". $idsendero . ";";
+	    . "	WHERE IdSendero = ". $idsendero  
+		 . "	AND Revisado = TRUE;";
 
 		$result = mysqli_query($link, $query);
 		$string = "";
@@ -77,10 +78,11 @@
 	function listaIncidenciasNoValidadas(){
 		$link = connect();
 		$query = "SELECT Titulo, Descripcion, Fecha, IdIncidencia"
-	    . "	FROM Incidencia "
+	    . " FROM Incidencia "
 	    . " WHERE Revisado = FALSE"
 	    . " AND Solucionado = FALSE"
-	    . "	ORDER BY Fecha DESC;";
+		 . " AND Denegado = FALSE"
+	    . " ORDER BY Fecha DESC;";
 
 		$result = mysqli_query($link, $query);
 		while ($row = mysqli_fetch_array($result)){
@@ -97,7 +99,7 @@
 	}	
 	function denegarIncidencia($denegar){
 		$link = connect();
-		$query = "UPDATE Incidencia SET Revisado = 0 "
+		$query = "UPDATE Incidencia SET Denegado = 1 "
 		. "WHERE IdIncidencia =". $denegar .";";
 		$result = mysqli_query($link, $query);
 		@mysql_close($link);
