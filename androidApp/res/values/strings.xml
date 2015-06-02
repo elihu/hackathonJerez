@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SenderosApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="consultar">Consultar rutas</string>
+    <string name="municipios">Municipio</string>
+    <string name="dificultad">Dificultad</string>
+    <string name="maxlongitud">Máxima longitud de ruta</string>
+    <string name="valoracionminima">Valoración mínima</string>
+    <string name="buscar">Buscar</string>
+    <string name="norutas">No hay rutas disponibles</string>
+    <string name="nombre">Nombre ruta</string>
+    <string name="longitud">Longitud ruta</string>
+    <string name="reportar">Reportar incidencias</string>
+    <string name="visualizar">Visualizar incidencias</string>
+    <string name="titulo">Título de la incidencia</string>
+    <string name="descripcion">Descripción</string>
+    <string name="imagenfoto">Imagen (opcional)</string>
+    <string name="enviar">Enviar</string>
+    <string name="foto">Tomar foto</string>
+
+</resources>
